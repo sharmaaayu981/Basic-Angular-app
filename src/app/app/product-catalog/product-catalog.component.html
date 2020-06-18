@@ -1,0 +1,27 @@
+<p>Product Management</p>
+
+<div class="container">
+  <h1>Product Timeline</h1>
+</div>
+
+
+<table class="table table-striped table-dark">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Name</th>
+    <th scope="col">Category</th>
+    <th scope="col">Quantity</th>
+    <th scope="col">Price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let tempprod of productCatalog">
+    <td>{{tempprod.ID}}</td>
+    <td>{{tempprod.Name}}</td>
+    <td>{{tempprod.Category}}</td>
+    <td>{{tempprod.Quantity}}</td>
+    <td>{{tempprod.Price}}</td>
+  </tr>
+  </tbody>
+</table>
